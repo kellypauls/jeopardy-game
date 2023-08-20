@@ -1,0 +1,73 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body {
+  text-align: center;
+  background-color: #060ce9;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 5px;
+  width: 1000px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+
+td {
+  background-color: #115ff4;
+  color: white;
+  height: 100px;
+  width: 50px;
+  font-size: 14px;
+  letter-spacing: .7;
+}
+
+thead {
+  background-color: hsl(0, 0%, 100%);
+  color: #060ce9;
+
+}
+
+thead th {
+  height: 50px;
+  width: 100px;
+  margin: 15px;
+  padding: 15px;
+  text-transform: capitalize;
+  
+}
+
+.answer {
+  background-color: #28a200;
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: #8d2ab5;
+  padding: 15px 0px;
+  width: 150px;
+  color: white;
+  border-radius: 15px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+button:hover {
+  background-color: #74119c;
+}
+
+
