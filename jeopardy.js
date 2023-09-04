@@ -32,7 +32,7 @@ let categories = [];
  */
 
 async function getCategoryIds() {
-    const res = await axios.get('http://jservice.io/api/categories', {params: { count : 99}})
+    const res = await axios.get('https://jservice.io/api/categories', {params: { count : 99}})
     // mapping through data to see which categories had 5 or fewer clues
     const tooFewClues = res.data.map(clues => clues.clues_count) 
     const goodCategories = tooFewClues.reduce(function(newArr, clues){
@@ -69,7 +69,7 @@ async function getCategoryIds() {
 
 async function getCategory(catId) {
     // creating url to plug in category ID
-    const url = `http://jservice.io/api/category?id=${catId}`;
+    const url = `https://jservice.io/api/category?id=${catId}`;
     const cat = await axios.get(url);
     // getting the clues into an array
     const clueData = cat.data.clues;
